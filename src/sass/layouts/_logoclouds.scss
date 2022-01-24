@@ -1,0 +1,41 @@
+.logclouds {
+  padding: 56px 0;
+  position: relative;
+}
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company::before,
+.company::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1110px;
+  height: 1px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+.company::before {
+  top: 10%;
+}
+.company::after {
+  bottom: 10%;
+}
+.company-item:not(:last-child) {
+  margin-right: 64px;
+}
+
+.company-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
