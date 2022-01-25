@@ -1,0 +1,59 @@
+.product {
+  padding: 64px 0;
+}
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-left-wrapper {
+  margin-right: 30px;
+}
+.product-title {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.35;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  margin-bottom: 32px;
+}
+.product-text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.78;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  margin-bottom: 32px;
+}
+.product-right-wrapper {
+  padding: 0 48px;
+  max-width: 540px;
+}
+.product-btn {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  font-feature-settings: 'liga' off;
+  color: #8c30f5;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.button__svg {
+  margin-left: 9px;
+  fill: $btn-color;
+}
+.product-btn:hover,
+.product-btn:focus {
+  color: $button-hover-color;
+}
+.product-btn:hover .button__svg,
+.product-btn:focus .button__svg {
+  fill: $button-hover-color;
+}
