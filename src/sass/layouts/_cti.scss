@@ -1,0 +1,40 @@
+.section-cti {
+  padding: 67px 0;
+  background: $cti-background;
+}
+.section-cti-left-wrapper {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.33;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  max-width: 540px;
+  margin-bottom: 8px;
+}
+.section-cti-text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.78;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  margin-bottom: 48px;
+}
+.section-cti-app__text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.58;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+}
+.section-cti-app__flex {
+  justify-content: flex-start;
+}
+.section-cti__wrapper {
+  display: flex;
+}
