@@ -1,0 +1,29 @@
+.offer {
+  padding: 64px 0;
+}
+.offer-text-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.offer-title {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.35;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  max-width: 540px;
+  margin-right: 30px;
+}
+.offer-text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.78;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  max-width: 540px;
+}
