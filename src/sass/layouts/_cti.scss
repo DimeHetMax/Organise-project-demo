@@ -38,3 +38,10 @@
 .section-cti__wrapper {
   display: flex;
 }
+.top-iphone {
+  background-image: url(/images/cti/screenfirst.jpg), url(/images/cti/iPhonefirst.jpg),
+    url(/images/cti/screensecond.jpg), url(/images/cti/iPhonesecond.jpg);
+  background-size: 201px 420px, 232px 464px, 197px 430px, 232px 464px;
+  background-position: top right 35.3%, top right 35%, bottom right 14%, bottom right 13%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
