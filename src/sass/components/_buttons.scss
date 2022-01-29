@@ -12,3 +12,21 @@
   background: #5a03be;
   transition: background 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  fill: $main-color;
+  transition: fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover,
+.close-button:focus {
+  fill: #5a03be;
+  transition: fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
