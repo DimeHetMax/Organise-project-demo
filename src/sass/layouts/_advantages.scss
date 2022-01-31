@@ -2,131 +2,188 @@
   padding-top: 120px;
   padding-bottom: 80px;
   background: $advantages-background;
-
-  .advantages-title {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 1.33;
-    font-feature-settings: 'liga' off;
-    color: $main-color;
-    width: 445px;
-    margin-bottom: 8px;
-  }
-
-  .advantages-text {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.78;
-    font-feature-settings: 'liga' off;
-    color: $main-color;
-    margin-bottom: 24px;
-  }
-  .advantages-title::before {
-    content: '';
-    display: block;
-    width: 142px;
-    height: 120px;
-    position: absolute;
-    top: -56px;
-    left: 180px;
-    background-image: url(/images/advantages/marker.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-  .hupspot-card {
-    width: 350px;
-    height: 436px;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-    border-radius: 8px;
-    padding: 32px;
-    margin-bottom: 32px;
-    margin-left: 55px;
-  }
-  .hupspot-card-text {
-    width: 254px;
-  }
-  .name-card-title {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 1.56;
-    font-feature-settings: 'liga' off;
-    color: #18191f;
-  }
-  .name-text {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    font-feature-settings: 'liga' off;
-    color: #969bab;
-  }
-  .wrapper-right {
-    margin-top: 50px;
-  }
-  .airbnb-card {
-    width: 445px;
-    height: 340px;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-    border-radius: 8px;
-    padding: 32px;
-    margin-bottom: 32px;
-  }
-
-  .airbnb-card-text {
-    max-width: 349px;
-  }
-  .inside-card-wrapper {
-    display: inline-block;
-    margin-left: 35px;
-    position: relative;
-  }
-  .bookshow-card {
-    width: 350px;
-    height: 276px;
-    padding: 32px;
-    background: $card-background;
-    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-    border-radius: 8px;
-  }
-  .bookshow-card-text {
-    max-width: 254px;
-  }
-  .card-text {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.78;
-    font-feature-settings: 'liga' off;
-    color: $main-color;
-    margin-bottom: 24px;
-  }
-  .card-text::before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 14px;
-    position: absolute;
-    top: 0px;
-    left: -32px;
-    background-image: url(/images/advantages/marker2.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .advantages__flex {
+}
+.advantages__flex {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     position: relative;
   }
+}
+.advantages-title {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.33;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  max-width: 320px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.33;
+    max-width: 445px;
+  }
+}
+
+.advantages-text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.78;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+.advantages-title::before {
+  content: '';
+  display: block;
+  width: 142px;
+  height: 120px;
+  position: absolute;
+  top: -56px;
+  left: 180px;
+  background-image: url(/images/advantages/marker.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.hupspot-card {
+  width: 280px;
+  height: 436px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+    margin-bottom: 32px;
+    margin-left: 55px;
+    padding: 32px;
+  }
+}
+
+.hupspot-card-text {
+  width: 183px;
+  @media screen and (min-width: 1200px) {
+    width: 254px;
+  }
+}
+.hupspot-card__svg {
+  @media screen and (max-width: 1200px) {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+.name-card-title {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.56;
+  font-feature-settings: 'liga' off;
+  color: #18191f;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+.name-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  font-feature-settings: 'liga' off;
+  color: #969bab;
+}
+.wrapper-right {
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+.airbnb-card {
+  width: 280px;
+  height: 340px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    width: 445px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.airbnb-card-text {
+  max-width: 250px;
+  @media screen and (min-width: 1200px) {
+    max-width: 349px;
+  }
+}
+.airbnb-card__svg {
+  @media screen and (max-width: 1200px) {
+    height: 35px;
+  }
+}
+.inside-card-wrapper {
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+  @media screen and (min-width: 1200px) {
+    margin-left: 35px;
+  }
+}
+.bookshow-card {
+  width: 280px;
+  height: 276px;
+  padding: 32px;
+  background: $card-background;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+  }
+}
+.bookshow-card-text {
+  max-width: 254px;
+}
+.card-text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.78;
+  font-feature-settings: 'liga' off;
+  color: $main-color;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+.card-text::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 14px;
+  position: absolute;
+  top: 0px;
+  left: -32px;
+  background-image: url(/images/advantages/marker2.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
