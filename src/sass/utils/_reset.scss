@@ -29,7 +29,10 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .card-svg__flex {
   display: flex;
