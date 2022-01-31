@@ -2,25 +2,43 @@
   padding-bottom: 58px;
 }
 .hero-wrapper {
-  background-image: url(../images/hero/hero1x.jpg);
+  background-image: url(../images/hero/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/hero1x.jpg);
+  }
 }
 .container-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .nav-left {
   display: flex;
+  @media screen and (max-width: 1200px) {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
 }
 .logo-link {
+  margin-right: 0px;
   padding: 22px 0;
-  margin-right: 32px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
 }
 
 .site-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .site-nav-item {
   font-family: Manrope;
@@ -45,6 +63,26 @@
   color: $main-color-hover;
   transition: color 1450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-manu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.mobile-manu-button__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #8c30f5;
+  transition: fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-manu-button__svg:hover,
+.mobile-manu-button__svg:focus {
+  fill: #5a03be;
+  transition: fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .container-btn {
   display: flex;
   align-items: center;
@@ -62,9 +100,12 @@
   align-items: center;
 }
 .store {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .store-item:not(:last-child) {
   margin-right: 13px;
@@ -85,20 +126,29 @@
 }
 //======================================
 .wrapper-title {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .title {
   font-family: $primary-font;
   font-style: normal;
   font-weight: 800;
-  font-size: 72px;
-  line-height: 1.36;
+  font-size: 40px;
+  line-height: 1.35;
   font-feature-settings: 'liga' off;
   color: $main-color;
-  max-width: 730px;
-  margin-top: 194px;
-  margin-bottom: 32px;
-  margin-right: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.36;
+    max-width: 730px;
+    margin-top: 194px;
+    margin-bottom: 32px;
+    margin-right: 45px;
+    text-align: unset;
+  }
 }
 .title-btn {
   font-family: $primary-font;
@@ -110,9 +160,23 @@
   font-feature-settings: 'liga' off;
   color: $button-color;
 }
+.mob-button {
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 .wrapper-title-right {
-  margin-top: 112px;
   position: relative;
+  @media screen and (min-width: 1200px) {
+    margin-top: 112px;
+  }
+}
+.wrapper-title-right img {
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 }
 .image-screen {
   position: absolute;
