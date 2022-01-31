@@ -3,9 +3,18 @@
   position: relative;
 }
 .company {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .company::before,
@@ -13,8 +22,8 @@
   content: '';
   display: block;
   position: absolute;
-  width: 1110px;
-  height: 1px;
+  width: 100%;
+  height: 2px;
   left: 50%;
   transform: translate(-50%, -50%);
   background: linear-gradient(
@@ -23,6 +32,10 @@
     rgba(192, 204, 218, 0.6) 50.38%,
     rgba(192, 204, 218, 0.1) 100%
   );
+  @media screen and (min-width: 1200px) {
+    width: 1110px;
+    height: 1px;
+  }
 }
 .company::before {
   top: 10%;
@@ -30,8 +43,16 @@
 .company::after {
   bottom: 10%;
 }
+.company-item {
+  max-width: 125px;
+  flex-basis: calc((100% + 30px) / 2);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 .company-item:not(:last-child) {
-  margin-right: 64px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 64px;
+  }
 }
 
 .company-svg {
