@@ -20,7 +20,7 @@
 }
 .modal {
   position: absolute;
-  width: 530px;
+  width: 90%;
   min-height: 581px;
   top: 50%;
   left: 50%;
@@ -29,12 +29,20 @@
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 20px;
-  padding: 40px;
+  padding: 30px;
+  @media screen and (min-width: 768px) {
+    width: 530px;
+    padding: 40px;
+  }
 }
 .close-modal__btn {
   position: absolute;
-  top: 9px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
+  @media screen and (min-width: 1200px) {
+    top: 9px;
+    right: 10px;
+  }
 }
 .modal-close__svg {
   display: flex;
@@ -44,13 +52,18 @@
 .modal-text {
   font-family: Manrope;
   font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 1.35;
   font-feature-settings: 'liga' off;
   text-align: center;
   color: #18191f;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
 }
 .modal-field {
   margin-bottom: 12px;
@@ -69,10 +82,13 @@
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.78;
   font-feature-settings: 'liga' off;
   color: #18191f;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 .modal-input-wrapper {
   position: relative;
@@ -119,7 +135,12 @@
   width: 25px;
   height: 25px;
   border: 2px solid #5a03be;
-  margin-right: 8px;
+  margin-right: 5px;
+  @media screen and (min-width: 1200px) {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
 }
 .checkbox-custom__svg {
   fill: #ffffff;
@@ -132,14 +153,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-family: $primary-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.78;
   font-feature-settings: 'liga' off;
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 .modal-policy__link {
   text-decoration: underline;
