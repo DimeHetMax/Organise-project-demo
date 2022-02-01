@@ -26,7 +26,7 @@
                         
                     </li>
                 </ul>
-                <button type="button" class="mobile-manu-button">
+                <button type="button" class="mobile-manu-button js-open-menu">
                     <svg class="mobile-manu-button__svg" width="30" height="30">
                         <use href="./images/sprite.svg#icon-mob-menu"></use>
                     </svg>
@@ -35,9 +35,11 @@
             <div class="nav-right">
                 <ul class="store">
                     <li class="store-item">
-                        <a class="store-link" href=""><svg class="store-svg" width="135" height="40">
-                            <use href="./images/sprite.svg#icon-google-play"></use>
-                        </svg></a>
+                        <a class="store-link" href="">
+                            <svg class="store-svg" width="135" height="40">
+                                 <use href="./images/sprite.svg#icon-google-play"></use>
+                            </svg>
+                    </a>
                     </li>
                     <li class="store-item">
                         <a class="store-link" href="">
@@ -48,7 +50,41 @@
                     </li>
                 </ul>
             </div>
-           
+            <div class="mobile-menu js-menu-container">
+                <div class="container mobile-menu-container">
+                    <button type="button" class="mobile-menu-btn js-close-menu">
+                        <svg class="mobile-menu-btn__svg close-mob-menu__svg" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-close-mob-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-list__item"><a class="mobile-menu-list__link" href="">About</a></li>
+                        <li class="mobile-menu-list__item"><a class="mobile-menu-list__link" href="">Products</a></li>
+                        <li class="mobile-menu-list__item"><a class="mobile-menu-list__link" href="">Pricing</a></li>
+                        <li class="mobile-menu-list__item"><a class="mobile-menu-list__link" href="">Blog</a></li>
+                        <li class="mobile-menu-list__item"><a class="mobile-menu-list__link" href="">Jobs</a></li>
+                    </ul>
+
+                    <div class="mobile-menu-bottom">
+                        <ul class="mobile-menu-bottom-list">
+                            <li class="mobile-menu-bottom-list__item">
+                                <a class="mobile-menu-bottom-list__link" href="">
+                                    <svg class="mob-store-svg" width="135" height="40">
+                                        <use href="./images/sprite.svg#icon-google-play"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-menu-bottom-list__item">
+                                <a class="mobile-menu-bottom-list__link" href="">
+                                <svg class="mob-store-svg" width="135" height="40">
+                                    <use href="./images/sprite.svg#icon-app-store"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="wrapper-title">
             <div class="wrapper-title-left">
