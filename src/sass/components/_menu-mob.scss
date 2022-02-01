@@ -1,5 +1,5 @@
 .mobile-menu {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   z-index: 2;
   background-image: url(../images/hero/hero-mob1x.jpg);
@@ -24,8 +24,8 @@
   background: transparent;
   border: none;
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 14px;
+  right: 41px;
 }
 .close-mob-menu__svg {
   fill: $btn-color;
